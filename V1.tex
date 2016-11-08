@@ -84,13 +84,16 @@
 %\usepackage{cite}
 \usepackage{babelbib}
 \selectbiblanguage{ngerman}
-\usepackage[verbose]{placeins}
 
 \usepackage{siunitx}
 %\begin{document}
  % \SI{1.55}{\micro\metre}
 \sisetup{math-micro=\text{µ},text-micro=µ}
 \usepackage{amsmath}
+
+\usepackage[verbose]{placeins}
+%für \FloatBarrier
+
 \begin{document}
 
 \begin{titlepage}
@@ -160,12 +163,13 @@ d) Thermoelement\\
 e) PC mit Labview\\
 f) Heizsteuerung\\
 g) Gasauffang\\
-\section{Durchführung}
+
 Die Messung erfolgte für jeden Stoff bei drei verschiedenen Temperaturen; begonnen wurde mit der Messung bei Raumtemperatur. Damit überall die gleiche Temperatur herrscht, wurde zunächst Helium durch die Apparatur geleitet und anschließend mittels Vakuum wieder abgezogen. Die Messung war in Vorlaufphase (60s), Heizphase (20s) und Endphase (200s) unterteilt. Während der Heizphase wurde die auftretende Thermospannung inklusive Änderung(Fehler) notiert. Die Temperatur im Bezug zum Referenzbad wurde die Messung über von dem Programm "Labview$"$ aufgezeichnet.\\
 
 
 
 \section{Auswertung}
+
 
 \subsection{Bestimmung von $\Delta$ T}
 \begin{tabular}{c|c|c|c|c|c|c}
@@ -259,11 +263,55 @@ Die Ungenauigkeit des Korrekturfaktors $\Delta f$ ergibt sich ebenfalls aus der 
 \Delta f (\text{Zink})&=0,003\\ 
 \Delta f (\text{Kupfer})&=0,003\\
 \end{align} 
+
 \subsection{Berechnung $c_{p}(T)$}
+
+Hierzu Text/Werte von Isaac noch!!\\
+
+
+
+\begin{figure} [h!]\caption{$c_p(T)$ Graphit}
+\begin{center}
+\includegraphics[scale=0.5]{cp(T)Graphit.png} \end{center}
+\end{figure} 
+
+\begin{figure} [h!]\caption{$c_p(T)$ Kupfer}
+\begin{center}
+\includegraphics[scale=0.5]{cp(T)Kupfer.png} \end{center}
+\end{figure} 
   
-Origin- Auftragungen einfügen!  
+
+\begin{figure} [h!]\caption{$c_p(T)$ Zink}
+\begin{center}
+\includegraphics[scale=0.5]{cp(T)Zink.png} \end{center}
+\end{figure} 
+      
+Aus den linearen $c_p(T)$- werden Steigung und Schnittpunkt mit der Ordinate bestimmt, sodass nach dieser Gleichung für beliebige T die $c_p(T)$-Werte berechnet werden können. \\
+
+\begin{equation}
+c_p(T) = \left( m\cdot T  + n \cdot \mathrm{K} \right) \cdot \frac{\mathrm{J}}{\mathrm{mol}}
+\end{equation}
+
+\begin{center}
+\begin{table} [h] \caption{Linearer Plot}
+\begin{tabular} {r | r|  r }
+&m&n\\
+\hline
+Graphit& 0,00512&3,02287\\
+Kupfer&-0,17563&104,72748\\
+Zink&-0,3042&149,2514\\
+\end{tabular}
+\end{table}
+\end{center}
   
   
+  
+  
+  
+  
+\subsection{Berechnung von $\Delta c_{p}(T)$}
+
+Isaacs Part
 
 \subsection{Berechnung von $c_{V}(T)$ nach Debye}
 Die für verschiedene $\frac{T}{\Theta_{D}}$-Verhältnisse theoretischen Wärmekapazitäten der Stoffe können mittels Debye folgendermaßen berechnet werden:\\
@@ -280,41 +328,31 @@ D(x) = \frac{3}{x^3}\cdot \int_{0}^{x} \frac{t^3}{e^t -1} dt
 
 und $x= \frac{\Theta_D}{T}$.
 
+
+%nachfolgende Tabelle mit den richtigen aktualisierten Werten
 \begin{table} [h]
 \centering
-\caption{Was soll das sein ???}
+\caption{theoretische $c_V$-Werte nach Debye}
 \begin{tabular} {r | r|  r | r}
 &$\frac{T}{\Theta_D}=\frac{1}{x}$& D(x)&$c_V(T)[\mathrm{J}\cdot \mathrm{mol}^{-1} \cdot \mathrm{K}^{-1}]$\\
 \hline
-Graphit&0,15&0,061&-67\\
-&0,2&0,12&-59\\
-&0,25&0,18&-50\\
-&0,3&0,24&-42\\
-\hline
-Cu/Zn&0,4&0,35&-27\\
-&0,5&0,44&-16\\
-&0,6&0,51&-6,5\\
-&0,7&0,56&0,56\\
+Graphit	&0,15&	0,0596	&5,31\\
+	&0,2&	0,118	&9,20\\
+	&0,25	&0,182&	12,5\\
+	&0,3	&0,244	&15,2\\
+	\hline			
+Cu/Zn &	0,4	&0,354&	18,6\\
+	&0,5&	0,441	&20,6\\
+	&0,6	&0,510	&21,8\\
+	&0,7&	0,564&22,6\\
+
 \end{tabular}
 \end{table}
+
+\FloatBarrier
 
 \subsection{Berechnung der zugehörigen $<\Theta_D>$-Werte }
-Aus den linearen $c_p(T)$- werden Steigung und Schnittpunkt mit der Ordinate bestimmt, sodass nach dieser Gleichung für beliebige T die $c_p(T)$-Werte berechnet werden können. \\
 
-\begin{equation}
-c_p(T) = \left( m\cdot T  + n \cdot \mathrm{K} \right) \cdot \frac{\mathrm{J}}{\mathrm{mol}}
-\end{equation}
-\begin{table} [h]
-\centering
-\caption{Was soll das sein ???}
-\begin{tabular} {r | r|  r }
-&m&n\\
-\hline
-Graphit& 0,00512&3,02287\\
-Kupfer&-0,17563&104,72748\\
-Zink&-0,3042&149,2514\\
-\end{tabular}
-\end{table}
 
 Für Festkörper gilt: $c_V =c_p -R$, so kann die Gleichung auch auf die soben aus den Debye-Temperaturen ermittelten theoretischen $c_V(T)$- Werte angewendet werden. Somit können die zu den $c_V$- Werten zugehörigen Temperaturwerte ermittelt werden:\\
 
@@ -330,27 +368,26 @@ T \cdot x = \Theta_D
 
 Letztendlich ergeben sich daraus folgende $\Theta_D$-Mittelwerte:\\
 
-\begin{table} [h]
-\centering
-\caption{Was soll das sein ???}
-\begin{tabular} {r | r|  r |r |r}
-& $c_V$  & T	[K] &$\Theta_D$ [K]	&$<\Theta_D>$ [K]\\
-\hline
-Graphit&-66,6731373789	&-11988,5830622769	&-79923,8870818457&	-47712,459258447\\
-&-58,7829970312	&-10447,5400256244	&-52237,700128122&\\	
-&-50,1033514056&	-8752,2967393775&	-35009,1869575101&\\	
-&-41,6626326627	&-7103,7188598931&	-23679,0628663104&\\	
-\hline
 
-Cu&-27,0226353757&	702,8164509235&	1757,0411273088&	1197,0695344183\\
-&-15,5216922434	&637,33251804	&1274,6650360801	\\
-&-6,5351968424	&586,1653176703&	976,9421961172	\\
-&0,5645533423	&545,7408447171	&779,6297781672	\\
+%aktualisierte Werte in dieser Tabelle
+\begin{table} [h]\caption{$<\Theta_D>$ für jeweiliges Material}
+\begin{tabular} {r | r|  r |r |r}
+& $c_V$ [J/mol K] & T	[K] &$\Theta_D$ [$10^2\cdot$K]	&$<\Theta_D>$ [K]\\
 \hline
-Zn&-27,0226353757	&552,1353493613	&1380,3383734032&	969,0459094781\\
-&-15,5216922434	&514,3281727264&	1028,6563454528	\\
-&-6,5351968424	&484,7867677266	&807,977946211\\	
-&0,5645533423&	461,4476809916&	659,2109728452\\
+Graphit &5,31	&2071	&138&	138$\cdot10^2$\\
+        &9,20	&28,3&	141\\	
+        &12,5&	34,8&	139\\	
+        &15,1	&40,0	&133\\
+\hline						
+Cu&18,6&	443	&11,0&	820\\
+&20,6	&432&	8,63	\\
+&21,8	&425	&7,08	\\
+&22,6&	420&	6,00\\	
+\hline			
+Zn&18,6&	402&	10,1&	751\\
+&20,6&	396&	7,91	\\
+&21,8&	392	&6,53\\
+&22,6	&389&	5,56	\\
 \end{tabular}
 \end{table}
 
@@ -359,71 +396,27 @@ nicht sinnvoll bzw. warum??
 
 \subsection{Auftragung $\frac{T}{\Theta_D}$}
 
-
-\begin{table} [h!]
+%die Werte mussten nicht aktualisiert werden
+\begin{table} [h]
 \centering
-\caption{Was soll das sein ???}
+\caption{Werte zur Auftragung von $c_V$ nach 2.3 gegen $\frac{T}{\Theta_D}$}
 \begin{tabular} {r | r |r | r }
 &$\Theta_D$ Literaturwert [K] &$c_V$ [J/mol K] aus 3.3& zugehöriges $\frac{T}{\Theta_D}$ \\
 \hline
-Graphit& 2500950\protect\footnotemark &37,5898116076&0,0001223935 \\
-&&32,0777220308& 7,29722705371959 $\cdot 10^{-5}$\\
-&&36,4452044067& 9,32045822587417 $\cdot 10^{-5}$\\
-Cu&345\protect\footnotemark &429,5580091793& 0,8927536232 \\
-&&625,2840375554& 0,5089855072\\
-&&509,9269270258& 0,6773913043\\
-Zn&308\protect\footnotemark &464,4508607808& 0,9967532468\\
-&&794,7770616269& 0,5727272727\\
+Graphit& 2500950\protect\footnote{Quelle: http://phycomp.technion.ac.il/~david/thesis/node3.html, aufgerufen am 06.11.16} &37,6&0,000122 \\
+&&32,1& 0,0000730 \\
+&&36,4& 0,0000932 \\
+Cu&345\protect\footnote{Quelle: https://de.wikipedia.org/wiki/Debye-Temperatur, aufgerufen am 06.11.16} &430& 0,892 \\
+&&625& 0,510\\
+&&510& 0,677\\
+Zn&308\protect\footnote{Quelle: http://www.spektrum.de/lexikon/physik/debye-temperatur/2809, aufgerufen am 06.11.16} &464& 0,997\\
+&&795& 0,572\\
 \end{tabular}
 \end{table}
-\FloatBarrier
 
-
-Github Test
-
-
-
-
-
-
-
-
-
-
-
-
-\footnotetext{Quelle: http://phycomp.technion.ac.il/~david/thesis/node3.html, aufgerufen am 06.11.16}
-\footnotetext{Quelle: https://de.wikipedia.org/wiki/Debye-Temperatur, aufgerufen am 06.11.16}
-\footnotetext{Quelle: http://www.spektrum.de/lexikon/physik/debye-temperatur/2809, aufgerufen am 06.11.16}
-\section{Fehlerrechnung}
+JULE AUFTRAGUNG MACHEN nd einfügen
 
 \section{Diskussion}
-\begin{table}[h!]
-\centering
-\caption{Ergebnisse.}
-\begin{tabular}{c|c|c|c|c|c}
-Probe&Temperaturbad&$\text{c}_P^{\text{Exp.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] & $f$ &$\text{c}_P^{\text{Th.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] &$\text{c}_P^{\text{Lit.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] \\
-\hline
-Graphit& ZT&4,52 ± 0,014 &1,88 ± 0,006&\\
-\hline
-&$\text{N}_2$&7,27 ± 0,012&&\\
-\hline
-&$\text{N}_2$/EtOH&8,26 ± 0,014 &&\\
-\hline
-Zink &ZT& 51,7 ± 0,309&  0,450 ± 0,003&\\
-\hline
-&$\text{N}_2$& 35,6 ± 0,271&&\\
-\hline
-&$\text{N}_2$/EtOH& 29,0 ± 0,217&&\\
-\hline
-Kupfer &ZT&55,9 ± 0,278& 0,474 ± 0,003&\\
-\hline
-&$\text{N}_2$&43,3 ± 0,208&&\\
-\hline
-&$\text{N}_2$/EtOH& 34,7 ± 0,167&&\\
-\end{tabular}
-\end{table}
-\FloatBarrier
 Temperatur des Vergleichsbades nicht konstant
 komische Werte für T (10K zu viel)
 bei letzter Messung iwas schief gelaufen- konnte nicht ausgewertet werden
