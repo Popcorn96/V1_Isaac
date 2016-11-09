@@ -229,7 +229,7 @@ Kupfer & 25,330&0,453\\
 \end{table}
 \FloatBarrier
 
-Da die Messung des Spannungsabfalls fehlerbehaftet ist, wurde eine Gaussische Fehlerfortpflanzung aufgestellt um $\Delta\text{c}_P^{\text{Exp.}}$ und $\Delta f$ zu bestimmten:
+Da die Messung des Spannungsabfalls fehlerbehaftet ist, wurde eine Gaussische Fehlerfortpflanzung aufgestellt um $\Delta\text{c}_P^{\text{Exp.}}$, $\Delta f$ und $\Delta\text{c}_P^{\text{Neu}}$ zu bestimmten:
 \begin{align}
 \Delta \text{c}_P^{\text{Exp.}}&=\sqrt{ \left(\frac{I\Delta t}{n\Delta T}\cdot \Delta U \right)^2}\\
 \Delta \text{c}_P^{\text{Exp.}}(\text{Graphit bei ZT})&=\sqrt{ \left(\frac{750\cdot 10^{-3}\;\text{A} \cdot 20\;\text{s}}{2,67\;\text{mol}\cdot 4\;\text{K}}\cdot 0,01\;\text{V} \right)^2}\\
@@ -269,34 +269,39 @@ Die Ungenauigkeit des Korrekturfaktors $\Delta f$ ergibt sich ebenfalls aus der 
 \Delta f (\text{Zink})&=0,003\\ 
 \Delta f (\text{Kupfer})&=0,003\\
 \end{align} 
-Die Ergebenisse der experimentell bestimmten Wärmekapazitäten wurden mit den jeweiligen Korrekturfaktoren korrigiert und sind in der Tabelle 5 dargestellt.
+$\Delta\text{c}_P^{\text{Neu}}$ wurde folgendermaßen berechnet:
+\begin{align}
+\Delta\text{c}_P^{\text{Neu}}&= |\frac{\partial\Delta\text{c}_P^{\text{Neu}}}{\partial \text{c}_P^{\text{Exp.}}} \cdot \Delta\text{c}_P^{\text{Exp.}} |+ |\frac{\partial\Delta\text{c}_P^{\text{Neu}}}{\partial f} \cdot \Delta f|\\
+&=| f \cdot \Delta\text{c}_P^{\text{Exp.}}| + |\text{c}_P^{\text{Exp.}} \cdot \Delta f |
+\end{align} 
+Die Ergebenisse der korrigierten Wärmekapazitäten sind in der Tabelle 5 dargestellt.
 \begin{table}[h!]
 \centering
-\caption{Ergebnisse.}
+\caption{Ergebnisse für $\Delta\text{c}_P^{\text{Neu}}$}
 \begin{tabular}{c|c|c}
-Probe&Temperaturbad&$\text{c}_P^{\text{Exp.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$]\\
+Probe&Temperaturbad&$\text{c}_P^{\text{Neu}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$]\\
 \hline
-Graphit& ZT&4,52 ± 0,014 \\
+Graphit& ZT&4,52 ± 0,053 \\
 \hline
-&$\text{N}_2$&7,27 ± 0,012 \\
+&$\text{N}_2$&7,27 ± 0,046 \\
 \hline
-&$\text{N}_2$/EtOH&8,26 ± 0,014 \\
+&$\text{N}_2$/EtOH&8,26 ± 0,051 \\
 \hline
-Zink &ZT& 51,7 ± 0,309\\
+Zink &ZT& 51,7 ± 0,260\\
 \hline
-&$\text{N}_2$& 35,6 ± 0,271\\
+&$\text{N}_2$& 35,6 ± 0,211\\
 \hline
-&$\text{N}_2$/EtOH& 29,0 ± 0,217\\
+&$\text{N}_2$/EtOH& 29,0 ± 0,164\\
 \hline
-Kupfer &ZT&55,9 ± 0,278\\
+Kupfer &ZT&55,9 ± 0,242\\
 \hline
-&$\text{N}_2$&43,3 ± 0,208\\
+&$\text{N}_2$&43,3 ± 0,168\\
 \hline
-&$\text{N}_2$/EtOH& 34,7 ± 0,167\\
+&$\text{N}_2$/EtOH& 34,7 ± 0,132\\
 \end{tabular}
 \end{table}
 \FloatBarrier
-Die berechneten $\text{c}_P^{\text{Exp.}}$-Werte wurden gegen die Temperatur aufgetragen. Abbildung 3,4 und 5 zeigen den Kurvenverlauf für Grapgit, Kupfer und Zink.
+Die berechneten $\text{c}_P^{\text{Neu}}$-Werte wurden gegen die Temperatur aufgetragen. Abbildung 2, 3 und 4 zeigen den Kurvenverlauf für Graphit, Kupfer und Zink.
 \begin{figure} [h!]
 \begin{center}
 \includegraphics[scale=0.5]{cp(T)GraphitNeu.png} \end{center}
