@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.1)  9 NOV 2016 12:51
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2015.11.12)  9 NOV 2016 12:41
->>>>>>> origin/master
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.1)  9 NOV 2016 12:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1684,215 +1680,119 @@ Underfull \hbox (badness 10000) in paragraph at lines 395--396
  []
 
 Package babel Info: Redefining ngerman shorthand "|
-<<<<<<< HEAD
-(babel)             in language  on input line 418.
+(babel)             in language  on input line 419.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 418.
+(babel)             in language  on input line 419.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 418.
+(babel)             in language  on input line 419.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 418.
+(babel)             in language  on input line 419.
 [10
 Package placeins Info: Float barrier, from input line 378, processed on page 10
 , lands on page 10. 
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 422.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 421.
+(babel)             in language  on input line 422.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 421.
+(hyperref)                removing `math shift' on input line 422.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 421.
+(hyperref)                removing `\begingroup' on input line 422.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 421.
+(hyperref)                removing `\endgroup' on input line 422.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@@over' on input line 421.
+(hyperref)                removing `\@@over' on input line 422.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Theta' on input line 421.
+(hyperref)                removing `\Theta' on input line 422.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 421.
+(hyperref)                removing `subscript' on input line 422.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 421.
+(hyperref)                removing `math shift' on input line 422.
 
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 443.
+(babel)             in language  on input line 444.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 443.
-=======
-(babel)             in language  on input line 391.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 391.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 391.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 391.
-[9
-Package placeins Info: Float barrier, from input line 350, processed on page 9,
- lands on page 9. 
-]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 394.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 394.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 394.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\begingroup' on input line 394.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\endgroup' on input line 394.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\@@over' on input line 394.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `\Theta' on input line 394.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `subscript' on input line 394.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 394.
->>>>>>> origin/master
+(babel)             in language  on input line 444.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-Package placeins Info: Must dump some floats on input line 469.
+Package placeins Info: Must dump some floats on input line 470.
 Package babel Info: Redefining ngerman shorthand "|
-<<<<<<< HEAD
-(babel)             in language  on input line 469.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 469.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 469.
+(babel)             in language  on input line 470.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 469.
+(babel)             in language  on input line 470.
 [11
-Package placeins Info: Float barrier, from input line 469, processed on page 11
+Package placeins Info: Float barrier, from input line 470, processed on page 11
 , lands on page 11. 
 ]
-Package placeins Info: Check again: on input line 469.
-Package placeins Info: No floats held, on input line 469.
+Package placeins Info: Check again: on input line 470.
+Package placeins Info: No floats held, on input line 470.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 475.
+(babel)             in language  on input line 476.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 475.
+(babel)             in language  on input line 476.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 475.
+(babel)             in language  on input line 476.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 475.
+(babel)             in language  on input line 476.
  [12
-Package placeins Info: Float barrier, from input line 469, processed on page 12
+Package placeins Info: Float barrier, from input line 470, processed on page 12
 , lands on page 12. 
 ]
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 478.
+(babel)             in language  on input line 479.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 478.
+(babel)             in language  on input line 479.
 
-Underfull \hbox (badness 10000) in paragraph at lines 486--487
+Underfull \hbox (badness 10000) in paragraph at lines 487--488
 
  []
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 488.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 489.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 488.
+(babel)             in language  on input line 489.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 488.
+(babel)             in language  on input line 489.
 Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 488.
+(babel)             in language  on input line 489.
 Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 488.
+(babel)             in language  on input line 489.
 [13]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 488.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 489.
  (./V1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 488.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 488.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 489.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 489.
 Package rerunfilecheck Info: File `V1.out' has not changed.
 (rerunfilecheck)             Checksum: 81D1B2025C605E56D2BED259AE9A0FF1;706.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 488.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 489.
  ) 
 Here is how much of TeX's memory you used:
  20418 strings out of 493014
  380319 string characters out of 6133351
- 502288 words of memory out of 5000000
+ 503288 words of memory out of 5000000
  23635 multiletter control sequences out of 15000+600000
  26380 words of font info for 110 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,16n,56p,10353b,768s stack positions out of 5000i,500n,10000p,200000b,80000s
-=======
-(babel)             in language  on input line 416.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 416.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 422.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 422.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 422.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 422.
-[10]
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 425.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 425.
-
-Underfull \hbox (badness 10000) in paragraph at lines 433--434
-
- []
-
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 435.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 435.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 435.
-Package babel Info: Redefining ngerman shorthand "|
-(babel)             in language  on input line 435.
-Package babel Info: Redefining ngerman shorthand "~
-(babel)             in language  on input line 435.
-[11]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 435.
- (V1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 435.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 435.
-Package rerunfilecheck Info: File `V1.out' has not changed.
-(rerunfilecheck)             Checksum: DA0D81424A0B2CC7DA74AD27D6337DD0;660.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 435.
- ) 
-Here is how much of TeX's memory you used:
- 19934 strings out of 493673
- 364211 string characters out of 3148822
- 462205 words of memory out of 3000000
- 22974 multiletter control sequences out of 15000+200000
- 26043 words of font info for 109 fonts, out of 3000000 for 9000
- 1025 hyphenation exceptions out of 8191
- 44i,16n,56p,10353b,768s stack positions out of 5000i,500n,10000p,200000b,50000s
->>>>>>> origin/master
 pdfTeX warning (dest): name{Hfootnote.5} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1905,7 +1805,6 @@ pdfTeX warning (dest): name{Hfootnote.3} has been referenced but does not exist
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exist
 , replaced by a fixed one
 
-<<<<<<< HEAD
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}<
 /usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
 usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></
@@ -1925,23 +1824,7 @@ ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/
 6/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2016/
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb>
-Output written on V1.pdf (13 pages, 464059 bytes).
-=======
-<D:/Neuer Ordner/fonts/type1/public/amsfonts/cm/cmbx12.pfb><D:/Neuer Ordner/fon
-ts/type1/public/amsfonts/cm/cmcsc10.pfb><D:/Neuer Ordner/fonts/type1/public/ams
-fonts/cm/cmex10.pfb><D:/Neuer Ordner/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-<D:/Neuer Ordner/fonts/type1/public/amsfonts/cm/cmmi12.pfb><D:/Neuer Ordner/fon
-ts/type1/public/amsfonts/cm/cmmi6.pfb><D:/Neuer Ordner/fonts/type1/public/amsfo
-nts/cm/cmmi7.pfb><D:/Neuer Ordner/fonts/type1/public/amsfonts/cm/cmmi8.pfb><D:/
-Neuer Ordner/fonts/type1/public/amsfonts/cm/cmr10.pfb><D:/Neuer Ordner/fonts/ty
-pe1/public/amsfonts/cm/cmr12.pfb><D:/Neuer Ordner/fonts/type1/public/amsfonts/c
-m/cmr17.pfb><D:/Neuer Ordner/fonts/type1/public/amsfonts/cm/cmr7.pfb><D:/Neuer 
-Ordner/fonts/type1/public/amsfonts/cm/cmr8.pfb><D:/Neuer Ordner/fonts/type1/pub
-lic/amsfonts/cm/cmssbx10.pfb><D:/Neuer Ordner/fonts/type1/public/amsfonts/cm/cm
-sy10.pfb><D:/Neuer Ordner/fonts/type1/public/amsfonts/cm/cmsy8.pfb><D:/Neuer Or
-dner/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on V1.pdf (11 pages, 476759 bytes).
->>>>>>> origin/master
+Output written on V1.pdf (13 pages, 465628 bytes).
 PDF statistics:
  258 PDF objects out of 1000 (max. 8388607)
  214 compressed objects within 3 object streams
