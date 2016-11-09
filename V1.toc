@@ -5,9 +5,8 @@
 \contentsline {subsection}{\numberline {2.1}Bestimmung von $\Delta $ T}{4}{subsection.2.1}
 \contentsline {subsection}{\numberline {2.2}Bestimmung von $f$}{4}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Berechnung $c_{p}(T)$}{5}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}Berechnung von $\Delta c_{p}(T)$}{7}{subsection.2.4}
-\contentsline {subsection}{\numberline {2.5}Berechnung von $c_{V}(T)$ nach Debye}{7}{subsection.2.5}
-\contentsline {subsection}{\numberline {2.6}Berechnung der zugeh\IeC {\"o}rigen $<\Theta _D>$-Werte}{8}{subsection.2.6}
-\contentsline {subsection}{\numberline {2.7}Auftragung $\frac {T}{\Theta _D}$}{9}{subsection.2.7}
-\contentsline {section}{\numberline {3}Diskussion}{9}{section.3}
-\contentsline {subsection}{\numberline {3.1}Literaturverzeichnis}{10}{subsection.3.1}
+\contentsline {subsection}{\numberline {2.4}Berechnung von $c_{V}(T)$ nach Debye}{9}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Berechnung der zugeh\IeC {\"o}rigen $<\Theta _D>$-Werte}{9}{subsection.2.5}
+\contentsline {subsection}{\numberline {2.6}Auftragung $\frac {T}{\Theta _D}$}{10}{subsection.2.6}
+\contentsline {section}{\numberline {3}Diskussion}{10}{section.3}
+\contentsline {subsection}{\numberline {3.1}Literaturverzeichnis}{11}{subsection.3.1}
