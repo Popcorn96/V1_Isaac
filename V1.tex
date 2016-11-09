@@ -147,8 +147,8 @@ $\\\\
 \newpage
 
 
-\section{Experimenteller Aufbau}
-
+\section{Experimentelles}
+\subsection{Experimenteller Aufbau}
 
 \begin{figure} [h!]
 \begin{center}
@@ -163,15 +163,18 @@ d) Thermoelement\\
 e) PC mit Labview\\
 f) Heizsteuerung\\
 g) Gasauffang\\
-
-Die Messung erfolgte für jeden Stoff bei drei verschiedenen Temperaturen; begonnen wurde mit der Messung bei Raumtemperatur. Damit überall die gleiche Temperatur herrscht, wurde zunächst Helium durch die Apparatur geleitet und anschließend mittels Vakuum wieder abgezogen. Die Messung war in Vorlaufphase (60s), Heizphase (20s) und Endphase (200s) unterteilt. Während der Heizphase wurde die auftretende Thermospannung inklusive Änderung(Fehler) notiert. Die Temperatur im Bezug zum Referenzbad wurde die Messung über von dem Programm "Labview$"$ aufgezeichnet.\\
+\subsection{Durchführung}
+Die Messung erfolgte für jeden Stoff bei Zimmertemperatur, in einem Stickstoffbad und in einem Stickstoff/Ethanolbad und einem Heizstrom von 750~mA. Damit überall die gleiche Temperatur herrscht, wurde zunächst Helium durch die Apparatur geleitet und anschließend mittels Vakuum wieder abgezogen. Die Messung war in Vorlaufphase (60~s), Heizphase (20~s) und Endphase (200~s) unterteilt. Während der Heizphase wurde die auftretende Thermospannung inklusive Änderung (Fehler) notiert. Die Temperatur wurde mit einem Eisbad als Referenz mit dem Programm "Labview$"$ aufgezeichnet.\\
 
 
 
 \section{Auswertung}
 
 
-\subsection{Bestimmung von $\Delta$ T}
+\subsection{Messergebnisse}
+\begin{table}
+\centering
+\caption{Messergebnisse des Versuchs.}
 \begin{tabular}{c|c|c|c|c|c|c}
 T & Zimmertemperatur &Zimmertemperatur& $N_2$/EtOH& $N_2$/EtOH& $N_2$& $N_2$\\ 
 & U[V]& $\Delta T$ [K]&U[V]& $\Delta T$ [K]&U[V]& $\Delta T$ [K]\\
@@ -180,7 +183,7 @@ Graphit & 4 & $3,22\pm0,01$ & 4,1 &$3,20\pm0,03$&4,6&$3,16\pm0,05$\\
 Kupfer & 1,2 & $3,72\pm0,02$ & 1 &$3,68\pm 0,01$&0,8&$3,61\pm0,03$\\ 
 Zink & 1,4 & $3,61\pm 0,02$ & &$3,53\pm0,04$&0,8&$3,53\pm 0,09$ \\ 
 \end{tabular} 
-
+\end{table}
 \subsection{Bestimmung von $f$}
 
 Die experimentell ermittelte molare Wärmekapazität bei konstantem Druck errechnet sich folgendermaßen:\\
@@ -417,6 +420,32 @@ Zn&308\protect\footnote{Quelle: http://www.spektrum.de/lexikon/physik/debye-temp
 JULE AUFTRAGUNG MACHEN nd einfügen
 
 \section{Diskussion}
+\begin{table}[h!]
+\centering
+\caption{Ergebnisse.}
+\begin{tabular}{c|c|c|c|c|c}
+Probe&Temperaturbad&$\text{c}_P^{\text{Exp.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] & $f$ &$\text{c}_P^{\text{Th.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] &$\text{c}_P^{\text{Lit.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] \\
+\hline
+Graphit& ZT&4,52 ± 0,014 &1,88 ± 0,006& &8,517 \\
+\hline
+&$\text{N}_2$&7,27 ± 0,012& & \\
+\hline
+&$\text{N}_2$/EtOH&8,26 ± 0,014 & &\\
+\hline
+Zink &ZT& 51,7 ± 0,309&  0,450 ± 0,003& &24,47\\
+\hline
+&$\text{N}_2$& 35,6 ± 0,271&&\\
+\hline
+&$\text{N}_2$/EtOH& 29,0 ± 0,217&&\\
+\hline
+Kupfer &ZT&55,9 ± 0,278& 0,474 ± 0,003& &25,330\\
+\hline
+&$\text{N}_2$&43,3 ± 0,208&&\\
+\hline
+&$\text{N}_2$/EtOH& 34,7 ± 0,167&&\\
+\end{tabular}
+\end{table}
+\FloatBarrier
 Temperatur des Vergleichsbades nicht konstant
 komische Werte für T (10K zu viel)
 bei letzter Messung iwas schief gelaufen- konnte nicht ausgewertet werden
