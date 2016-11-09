@@ -172,7 +172,8 @@ Die Messung erfolgte für jeden Stoff bei Zimmertemperatur, in einem Stickstoffb
 
 
 \subsection{Messergebnisse}
-\begin{table}
+In der Tabelle 1 sind die Messergebnisse der Heizspannung sowie der Temperaturdifferenz dargestellt.
+\begin{table}[h!]
 \centering
 \caption{Messergebnisse des Versuchs.}
 \begin{tabular}{c|c|c|c|c|c|c}
@@ -184,6 +185,7 @@ Kupfer & 1,2 & $3,72\pm0,02$ & 1 &$3,68\pm 0,01$&0,8&$3,61\pm0,03$\\
 Zink & 1,4 & $3,61\pm 0,02$ & &$3,53\pm0,04$&0,8&$3,53\pm 0,09$ \\ 
 \end{tabular} 
 \end{table}
+\FloatBarrier
 \subsection{Bestimmung von $f$}
 
 Die experimentell ermittelte molare Wärmekapazität bei konstantem Druck errechnet sich folgendermaßen:\\
@@ -192,10 +194,7 @@ Die experimentell ermittelte molare Wärmekapazität bei konstantem Druck errech
 c_{m,p} = \frac{UI\Delta t}{n\Delta T}
 \end{equation}
 
-Mit\\
-$\Delta t= 20$ s\\
-I=750mA\\
-
+Hierbei wurde ein Heizstrom $I$ von 750~mA und eine Heizzeit $\Delta t$ von 20~s eingestellt. Die Auswertungsergebnisse sind in der Tabelle 2 aufgelistet.
 \begin{table}[h!]
 \centering
 \caption{Ergebnisse für $\text{c}_P^{\text{Exp.}}$.}
@@ -209,7 +208,9 @@ Zink & 3,72 & 1,2&0,900&51,7  \\
 Kupfer & 3,61& 1,4& 0,692 &55,9\\
 \end{tabular}
 \end{table}
-Der Korrekturfaktor \textit{f} ergibt sich aus dem Verhältnis von $\text{c}_P^{\text{Lit.}}$und $\text{c}_P^{\text{Exp.}}$
+\FloatBarrier 
+
+Der Korrekturfaktor \textit{f} ergibt sich aus dem Verhältnis von $\text{c}_P^{\text{Lit.}}$und $\text{c}_P^{\text{Exp.}}$. Die Korrekturfaktorenfür Graphit, Kupfer und Zink sind in Tabelle 3 dargestellt. 
 \begin{equation}
 f=\frac{\text{c}_P^{\text{Lit.}}}{\text{c}_P^{\text{Exp.}}}
 \end{equation}
@@ -226,6 +227,8 @@ Zink & 24,47&0,474  \\
 Kupfer & 25,330&0,453\\
 \end{tabular}
 \end{table}
+\FloatBarrier
+
 Da die Messung des Spannungsabfalls fehlerbehaftet ist, wurde eine Gaussische Fehlerfortpflanzung aufgestellt um $\Delta\text{c}_P^{\text{Exp.}}$ und $\Delta f$ zu bestimmten:
 \begin{align}
 \Delta \text{c}_P^{\text{Exp.}}&=\sqrt{ \left(\frac{I\Delta t}{n\Delta T}\cdot \Delta U \right)^2}\\
@@ -266,13 +269,34 @@ Die Ungenauigkeit des Korrekturfaktors $\Delta f$ ergibt sich ebenfalls aus der 
 \Delta f (\text{Zink})&=0,003\\ 
 \Delta f (\text{Kupfer})&=0,003\\
 \end{align} 
-
-\subsection{Berechnung $c_{p}(T)$}
-
-Hierzu Text/Werte von Isaac noch!!\\
-
-
-
+Die Ergebenisse der experimentell bestimmten Wärmekapazitäten wurden mit den jeweiligen Korrekturfaktoren korrigiert und sind in der Tabelle 5 dargestellt.
+\begin{table}[h!]
+\centering
+\caption{Ergebnisse.}
+\begin{tabular}{c|c|c}
+Probe&Temperaturbad&$\text{c}_P^{\text{Exp.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$]\\
+\hline
+Graphit& ZT&4,52 ± 0,014 \\
+\hline
+&$\text{N}_2$&7,27 ± 0,012 \\
+\hline
+&$\text{N}_2$/EtOH&8,26 ± 0,014 \\
+\hline
+Zink &ZT& 51,7 ± 0,309\\
+\hline
+&$\text{N}_2$& 35,6 ± 0,271\\
+\hline
+&$\text{N}_2$/EtOH& 29,0 ± 0,217\\
+\hline
+Kupfer &ZT&55,9 ± 0,278\\
+\hline
+&$\text{N}_2$&43,3 ± 0,208\\
+\hline
+&$\text{N}_2$/EtOH& 34,7 ± 0,167\\
+\end{tabular}
+\end{table}
+\FloatBarrier
+Die berechneten $\text{c}_P^{\text{Exp.}}$-Werte wurden gegen die Temperatur aufgetragen. Abbildung 3,4 und 5 zeigen den Kurvenverlauf für Grapgit, Kupfer und Zink.
 \begin{figure} [h!]
 \begin{center}
 \includegraphics[scale=0.5]{cp(T)GraphitNeu.png} \end{center}
@@ -303,6 +327,7 @@ c_p(T) = \left( m\cdot T  + n \cdot \mathrm{K} \right) \cdot \frac{\mathrm{J}}{\
 
 
 \begin{table} [h] 
+\centering
 \caption{Werte zur linearen Interpolation}
 \begin{tabular} {r | r|  r }
 & Steigung $m$& Schnittpunkt mit Ordinate $n$\\
