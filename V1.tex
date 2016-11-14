@@ -122,21 +122,20 @@ Assistent: & Christoph \\
 
 \vspace*{0.5cm}
 
-\begin{Large}
-\fbox{
-  \begin{minipage}[t][8cm][t]{8cm}
-  
- TestGithub\\ 
- Messwerte:\\
-  Literaturwerte:\\
-  $M_\mathrm{Campher} = 152,23 \mathrm{g{~} mol^{-1}}\protect\footnotemark 
-  $\\
-  $M_\mathrm{KCl} = 74,55 \mathrm{g{~} mol^{-1}} \protect\footnotemark 
-$\\\\
-  
-  \end{minipage}
-}
-\end{Large}
+
+\begin{table}[h!]
+\centering
+\caption{Ergebnisse des Versuchs.}
+\begin{tabular}{c|c|c|c||c|c}
+Probe&Temperaturbad&$\text{c}_P^{\text{Exp.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] &$\text{c}_P^{\text{Lit.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] & $<\Theta_D >$ [K]& $<\Theta_{D,Lit.}>$ [K] \\
+\hline
+Graphit& ZT&4,52 ± 0,053  &8,517& 138$ \cdot 10^2$& 2500950\\
+\hline
+Zink &ZT& 51,7 ± 0,260 &24,47& 981 & 345\\
+\hline
+Kupfer &ZT&55,9 ± 0,242 &25,330& 630 &308\\
+\end{tabular}
+\end{table}
 \footnotetext{Quelle: https://de.wikipedia.org/wiki/Campher, aufgerufen am 31.12.16}
  \footnotetext{Quelle: http://www.chemie.de/lexikon/Kaliumchlorid.html, aufgerufen am 31.12.16}
 \end{titlepage}
@@ -229,7 +228,7 @@ Kupfer & 25,330&0,453\\
 \end{table}
 \FloatBarrier
 
-Da die Messung des Spannungsabfalls fehlerbehaftet ist, wurde eine Gaussische Fehlerfortpflanzung aufgestellt um $\Delta\text{c}_P^{\text{Exp.}}$ und $\Delta f$ zu bestimmten:
+Da die Messung des Spannungsabfalls fehlerbehaftet ist, wurde eine Gaussische Fehlerfortpflanzung aufgestellt um $\Delta\text{c}_P^{\text{Exp.}}$, $\Delta f$ und $\Delta\text{c}_P^{\text{Neu}}$ zu bestimmten:
 \begin{align}
 \Delta \text{c}_P^{\text{Exp.}}&=\sqrt{ \left(\frac{I\Delta t}{n\Delta T}\cdot \Delta U \right)^2}\\
 \Delta \text{c}_P^{\text{Exp.}}(\text{Graphit bei ZT})&=\sqrt{ \left(\frac{750\cdot 10^{-3}\;\text{A} \cdot 20\;\text{s}}{2,67\;\text{mol}\cdot 4\;\text{K}}\cdot 0,01\;\text{V} \right)^2}\\
@@ -269,34 +268,39 @@ Die Ungenauigkeit des Korrekturfaktors $\Delta f$ ergibt sich ebenfalls aus der 
 \Delta f (\text{Zink})&=0,003\\ 
 \Delta f (\text{Kupfer})&=0,003\\
 \end{align} 
-Die Ergebenisse der experimentell bestimmten Wärmekapazitäten wurden mit den jeweiligen Korrekturfaktoren korrigiert und sind in der Tabelle 5 dargestellt.
+$\Delta\text{c}_P^{\text{Neu}}$ wurde folgendermaßen berechnet:
+\begin{align}
+\Delta\text{c}_P^{\text{Neu}}&= |\frac{\partial\Delta\text{c}_P^{\text{Neu}}}{\partial \text{c}_P^{\text{Exp.}}} \cdot \Delta\text{c}_P^{\text{Exp.}} |+ |\frac{\partial\Delta\text{c}_P^{\text{Neu}}}{\partial f} \cdot \Delta f|\\
+&=| f \cdot \Delta\text{c}_P^{\text{Exp.}}| + |\text{c}_P^{\text{Exp.}} \cdot \Delta f |
+\end{align} 
+Die Ergebenisse der korrigierten Wärmekapazitäten sind in der Tabelle 5 dargestellt.
 \begin{table}[h!]
 \centering
-\caption{Ergebnisse.}
+\caption{Ergebnisse für $\Delta\text{c}_P^{\text{Neu}}$}
 \begin{tabular}{c|c|c}
-Probe&Temperaturbad&$\text{c}_P^{\text{Exp.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$]\\
+Probe&Temperaturbad&$\text{c}_P^{\text{Neu}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$]\\
 \hline
-Graphit& ZT&4,52 ± 0,014 \\
+Graphit& ZT&4,52 ± 0,053 \\
 \hline
-&$\text{N}_2$&7,27 ± 0,012 \\
+&$\text{N}_2$&7,27 ± 0,046 \\
 \hline
-&$\text{N}_2$/EtOH&8,26 ± 0,014 \\
+&$\text{N}_2$/EtOH&8,26 ± 0,051 \\
 \hline
-Zink &ZT& 51,7 ± 0,309\\
+Zink &ZT& 51,7 ± 0,260\\
 \hline
-&$\text{N}_2$& 35,6 ± 0,271\\
+&$\text{N}_2$& 35,6 ± 0,211\\
 \hline
-&$\text{N}_2$/EtOH& 29,0 ± 0,217\\
+&$\text{N}_2$/EtOH& 29,0 ± 0,164\\
 \hline
-Kupfer &ZT&55,9 ± 0,278\\
+Kupfer &ZT&55,9 ± 0,242\\
 \hline
-&$\text{N}_2$&43,3 ± 0,208\\
+&$\text{N}_2$&43,3 ± 0,168\\
 \hline
-&$\text{N}_2$/EtOH& 34,7 ± 0,167\\
+&$\text{N}_2$/EtOH& 34,7 ± 0,132\\
 \end{tabular}
 \end{table}
 \FloatBarrier
-Die berechneten $\text{c}_P^{\text{Exp.}}$-Werte wurden gegen die Temperatur aufgetragen. Abbildung 3,4 und 5 zeigen den Kurvenverlauf für Grapgit, Kupfer und Zink.
+Die berechneten $\text{c}_P^{\text{Neu}}$-Werte wurden gegen die Temperatur aufgetragen. Abbildung 2, 3 und 4 zeigen den Kurvenverlauf für Graphit, Kupfer und Zink.
 \begin{figure} [h!]
 \begin{center}
 \includegraphics[scale=0.5]{cp(T)GraphitNeu.png} \end{center}
@@ -380,7 +384,7 @@ Cu/Zn &	0,4	&0,354&	18,6\\
 \subsection{Berechnung der zugehörigen $<\Theta_D>$-Werte }
 
 
-Für Festkörper gilt: $c_V =c_p -R$, so kann die Gleichung auch auf die soben aus den Debye-Temperaturen ermittelten theoretischen $c_V(T)$- Werte angewendet werden. Somit können die zu den $c_V$- Werten zugehörigen Temperaturwerte ermittelt werden:\\
+Für Festkörper gilt: $c_V =c_p -R$, so kann die Gleichung auch auf die soben aus den Debye-Temperaturen ermittelten theoretischen $c_V(T)$-Werte angewendet werden. Somit können die zu den $c_V$-Werten zugehörigen Temperaturwerte ermittelt werden:\\
 
 \begin{equation}
 T= \frac{c_V(T) -n +R}{m}
@@ -396,7 +400,9 @@ Letztendlich ergeben sich daraus folgende $\Theta_D$-Mittelwerte:\\
 
 
 %aktualisierte Werte in dieser Tabelle 09.11.16
-\begin{table} [h]\caption{$<\Theta_D>$ für jeweiliges Material}
+\begin{table} [h]
+\centering
+\caption{$<\Theta_D>$ für jeweiliges Material}
 \begin{tabular} {r | r|  r |r |r}
 & $c_V$ [J/mol K] & T	[K] &$\Theta_D$ [$10^2\cdot$K]	&$<\Theta_D>$ [K]\\
 \hline
@@ -439,46 +445,29 @@ Zn&308\protect\footnote{Quelle: http://www.spektrum.de/lexikon/physik/debye-temp
 \end{tabular}
 \end{table}
 
-
-\begin{figure} [h!]
-\begin{center}
-\includegraphics[scale=0.5]{Auswertung7.png} \end{center}
-\caption{Auftragung $\frac{T}{\Theta_D}$ gegen $c_V$ }
+\begin{figure}
+\includegraphics[width=13.5cm]{Auswertung7.png}
+\caption{Auftragung $\text{c}_V$ gegen $\frac{T}{\Theta_D}$.}
 \end{figure}
-
 \FloatBarrier
-
-
 \section{Diskussion}
 \begin{table}[h!]
 \centering
-\caption{Ergebnisse.}
-\begin{tabular}{c|c|c|c|c|c}
-Probe&Temperaturbad&$\text{c}_P^{\text{Exp.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] & $f$ &$\text{c}_P^{\text{Th.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] &$\text{c}_P^{\text{Lit.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] \\
+\caption{Ergebnisse des Versuchs.}
+\begin{tabular}{c|c|c|c||c|c}
+Probe&Temperaturbad&$\text{c}_P^{\text{Exp.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] &$\text{c}_P^{\text{Lit.}}$ [$\frac{\text{J}}{\text{mol}\cdot\text{K}}$] & $<\Theta_D >$ [K]& $<\Theta_{D,Lit.}>$ [K] \\
 \hline
-Graphit& ZT&4,52 ± 0,014 &1,88 ± 0,006& &8,517 \\
+Graphit& ZT&4,52 ± 0,053  &8,517& 138$ \cdot 10^2$& 2500950\\
 \hline
-&$\text{N}_2$&7,27 ± 0,012& & \\
+Zink &ZT& 51,7 ± 0,260 &24,47& 981 & 345\\
 \hline
-&$\text{N}_2$/EtOH&8,26 ± 0,014 & &\\
-\hline
-Zink &ZT& 51,7 ± 0,309&  0,450 ± 0,003& &24,47\\
-\hline
-&$\text{N}_2$& 35,6 ± 0,271&&\\
-\hline
-&$\text{N}_2$/EtOH& 29,0 ± 0,217&&\\
-\hline
-Kupfer &ZT&55,9 ± 0,278& 0,474 ± 0,003& &25,330\\
-\hline
-&$\text{N}_2$&43,3 ± 0,208&&\\
-\hline
-&$\text{N}_2$/EtOH& 34,7 ± 0,167&&\\
+Kupfer &ZT&55,9 ± 0,242 &25,330& 630 &308\\
 \end{tabular}
 \end{table}
 \FloatBarrier
-Temperatur des Vergleichsbades nicht konstant
-komische Werte für T (10K zu viel)
-bei letzter Messung iwas schief gelaufen- konnte nicht ausgewertet werden
+Die experimentell bestimmten Wärmekapazitäten sind dem Literaturwert nicht nahe. Die Wärmekapazität von Graphit liegt unter dem Literaturwert. Ursache hierfür könnte in der Bestimmung der Temperaturdifferenz liegen. Die zu große Temperaturdifferenz führt zu einem Nenner im Quotienten aus Gl. 1, sodass die berechnete Wärmekapazität zu kleiner als die tatsächliche Wärmekapazität ist. Die Wärmekapazitäten für Zink und Kupfer liegen um einen Faktor 2 über dem Literaturwert. Ursache hierfür könnte bei Kupfer die Temperaturabhänigkeit sein. Kupfer ist, wie an Abbildungen 3 zu erkennen ist, stärker temperaturabhängig, sodass die nicht SATP-Bedingungen zu einer großen Abweichung vom Literaturwert führen könnte. \\
+Die berechneten Mittelwerte der Debytemperaturen sind den jeweiligen Literaturwerten nicht nahe. Die berechnete Debey-Temperatur bei Graphit liegt um einen Faktor über $10^2$ unter dem Literaturwert. Ursache könnte die Steigung m aus der Auftragung sein. Ist die Steigung zu groß, ist das Ergebniss für die Temperatur zu klein, sodasss die berechnete Debye-Temperatur zu klein ist. Die Steigung könnte aufgrund der zu kleinen Wärmekapazität bei Raumtemperatur zu groß sein. Wie schon diskutiert, könnte die zu geringe Wärmekapazität an der zu groß bestimmten Temperaturdifferenzen liegen. Die Debye-Temperaturen von Zink und Kupfer liegen um einen Fator von mehr als 2 über den Literaturwerten. Bei der Auswertung von Zink konnte die Messung bei Stickstoff/Ethanol-Bad nicht ausgewertet werden. Die zwei Messpunkte könnten eine Ursache für die große Ungenauigkeit sein. Des Weiteren könnte eine Ursache für die positive Abweichung könnte beim Zink die geringe Steigung m sein. Hier durch wird der Quotient größer zur Berechnung der Temperatur größer, was die zu große Debye-Temperatur zur Folge hat.
+Eine Ursache für die zu große Debye-Temperatur bei Kupfer könnte der negative Wert für n sein. 
 
 
 \newpage
