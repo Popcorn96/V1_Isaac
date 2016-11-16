@@ -1,0 +1,13 @@
+\select@language {ngerman}
+\select@language {ngerman}
+\contentsline {section}{\numberline {1}Experimentelles}{3}{section.1}
+\contentsline {subsection}{\numberline {1.1}Experimenteller Aufbau}{3}{subsection.1.1}
+\contentsline {subsection}{\numberline {1.2}Durchf\IeC {\"u}hrung}{3}{subsection.1.2}
+\contentsline {section}{\numberline {2}Auswertung}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Messergebnisse}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}$\Delta G_R$(T) gegen T}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Berechnung von $c_{V}(T)$ nach Debye}{9}{subsection.2.3}
+\contentsline {subsection}{\numberline {2.4}Berechnung der zugeh\IeC {\"o}rigen $<\Theta _D>$-Werte}{10}{subsection.2.4}
+\contentsline {subsection}{\numberline {2.5}Auftragung $\frac {T}{\Theta _D}$}{10}{subsection.2.5}
+\contentsline {section}{\numberline {3}Diskussion}{13}{section.3}
+\contentsline {subsection}{\numberline {3.1}Literaturverzeichnis}{14}{subsection.3.1}
